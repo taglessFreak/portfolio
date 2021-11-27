@@ -3,10 +3,16 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
+  <font-awesome-icon icon="user-secret" />
+  <font-awesome-icon icon="baseball-ball" />
+  <font-awesome-icon :icon="['fas', 'spinner']" spin />
+  <font-awesome-icon :icon="['fas', 'align-left']" />
   <router-view />
 </template>
 
 <style lang="scss">
+@import "~@/../mdb/scss/index.free.scss";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
